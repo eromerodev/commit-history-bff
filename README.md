@@ -1,6 +1,7 @@
 # Commit history BFF
 
-Backend API that returns all commits for this repository: https://github.com/eromerodev/commit-history-app
+Backend API that returns all commits for the following repository:
+- https://github.com/eromerodev/commit-history-app
 
 ## Getting Started
 
@@ -24,6 +25,8 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 
 <img align="center" src="./doc/api.png">
 
+## Calling the API
+
 ```sh
 #curl request example
 
@@ -37,11 +40,11 @@ curl -X 'GET' \
 
 ## Frontend setup
 
-You can use the url of this project to set the env variable for the frontend application.
+You can use the url of this project to set `COMMITS_API_URL` env variable in the frontend application.
 
 ```js
 //env variable in the frontend
-COMMITS_API_URL="http://localhost:3001"
+COMMITS_API_URL="http://localhost:3001/api/v1/commits/614058686"
 ```
 
 
